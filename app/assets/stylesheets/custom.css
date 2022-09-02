@@ -95,3 +95,12 @@ font-size: 20px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
+.update-btn {
+	width : 95%;
+	margin-top : 20px;
+	padding : 5px 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
