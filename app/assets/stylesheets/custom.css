@@ -104,3 +104,15 @@ font-size: 20px;
 	letter-spacing: 1px;
 	font-weight: 600;
 }
+.create-link,
+.return-link{
+	text-align: center;
+	color :rgb(132, 190, 190);
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.return-link:hover{
+	color : yellow;
+}
