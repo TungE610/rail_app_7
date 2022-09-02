@@ -55,7 +55,6 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-	gem "sqlite3", "~> 1.4"
   gem "web-console"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
@@ -75,3 +74,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'cssbundling-rails' 
+gem 'sass-rails'

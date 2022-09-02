@@ -1,0 +1,97 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	background-color: rgb(108, 163, 163);
+}
+.navbar-brand {
+	color : rgb(241, 241, 241);
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-left: 30px;
+	font-weight: 600;
+}
+
+.nav-link {
+	color : rgb(241, 241, 241);
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+.jumbotron {
+  background-image: asset-url('jumbo-copy.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+.page-title {
+	color: #6aaec9; 
+	font-family: "Great Vibes", cursive; 
+	font-size: 50px; 
+	line-height: 160px;
+	font-weight: normal; 
+	margin-bottom: 0px; 
+	margin-top: 40px; 
+	text-align: center; 
+	text-shadow: 0 1px 1px #fff;
+
+}
+.card-header {
+	background-color: rgb(132, 190, 190);
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.card-title{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.card-text{
+font-size: 20px;
+}
+
+.action-btn {
+	margin : 5px 20px;
+	padding : 3px 12px;
+}
+
+.form-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
