@@ -77,3 +77,7 @@ end
 
 gem 'cssbundling-rails' 
 gem 'sass-rails'
+
+
+gem 'will_paginate', '~> 3.3'
+gem 'will_paginate-bootstrap5'
