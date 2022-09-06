@@ -1,17 +1,7 @@
-<div id="page-content">
-  <div class="container" id="home-container">
-    <div class="jumbotron text-center text-white">
-      <h1 class="display-4">Alpha Blog</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<%= link_to "Sign Up", signup_path, class:"btn btn-success btn-lg" %>
-    </div>
+<div class="container mx-0 h-[91vh] w-full" id="home-container">
+  <div class="bg-homepage h-full w-full bg-no-repeat bg-cover bg-center m-auto">
+		<h1 class="text-center font-extrabold text-4xl pt-12 tracking-wider mb-5">Alpha Blog</h1>
+		<p class="text-center">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<%= link_to "Sign up!", signup_path, class: "inline-block px-6 py-2.5 bg-blue-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out hover:text-white" %>
   </div>
 </div>
-
-<footer id="sticky-footer" class="py-4 bg-dark text-white">
-  <div class="container text-center">
-    <small>Copyright &copy; Your Website</small>
-  </div>
-</footer>

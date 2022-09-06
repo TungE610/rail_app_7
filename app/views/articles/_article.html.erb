@@ -1,28 +1,28 @@
-<div class="container">
+<div class="container m-auto">
 	<% if @articles.any? %>
 		<% @articles.each do |article| %>
-			<div class="row justify-content-md-center">
-				<div class="col-8 mt-4">
-					<div class="card text-center shadow mb-5 bg-white rounded">
-						<div class="card-header font-italic">
-							<% if article.user %>
-								by <%= link_to article.user.username, user_path(article.user) %>
+			<div class="flex justify-center">
+				<div class="block rounded-lg mb-5 shadow-lg bg-slate-100 max-w-xl text-center w-1/2 border-t-4">
+					<div class="text-lg text-blue-400 font-bold py-3 px-6 border-b border-gray-300 bg-slate-200">
+						<% if article.user %>
+							by <%= link_to article.user.username, user_path(article.user) %>
+						<% end %>
+					</div>
+					<div class="p-6">
+							<h5 class="text-2xl text-blue-500 font-bold card-title mt-2 mb-4"><%= link_to article.title, article_path(article), class: "text-success" %></h5>
+							<p class="card-text text-lg text-gray-400 mb-4"><%= truncate(article.description, length: 100) %></p>
+							<%= link_to "View", article_path(article), class: "inline-block px-6 py-2.5 bg-blue-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out hover:text-blue-600" %>
+							<% if logged_in? && (article.user == current_user  || current_user.admin?)%>
+								<%= link_to "Edit", edit_article_path(article), class: " inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out hover:text-yellow-600" %>
+								<%= link_to "Delete", article_path(article), class: "inline-block px-6 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-white hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out hover:text-red-600", method: :delete, data: {confirm: "Are you sure?"} %>
 							<% end %>
-						</div>
-						<div class="card-body">
-							<h5 class="card-title"><%= link_to article.title, article_path(article), class: "text-success" %></h5>
-							<p class="card-text"><%= truncate(article.description, length: 100) %></p>
-							<%= link_to "View", article_path(article), class: "btn btn-outline-success" %>
-							<%= link_to "Edit", edit_article_path(article), class: "btn btn-outline-info" %>
-							<%= link_to "Delete", article_path(article), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
-						</div>
-						<div class="card-footer text-muted">
-							<small>Created <%= time_ago_in_words(article.created_at) %> ago, 
-							edited <%= time_ago_in_words(article.updated_at) %> ago</small>
-						</div>
+					</div>
+					<div class="py-3 px-6 border-t border-gray-300 text-gray-500">
+							Created <%= time_ago_in_words(article.created_at) %> ago, 
+							edited <%= time_ago_in_words(article.updated_at) %> ago
 					</div>
 				</div>
 			</div>
-		<% end %>
+  	<% end %>
   <% end %>
 </div>
