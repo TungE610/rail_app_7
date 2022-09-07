@@ -1,9 +1,9 @@
 <h1 class="text-blue-700 font-bold text-3xl text-center mb-20 mt-20 tracking-wide">LISTING ALL ARTICLES</h1>
-<div class="flickr_pagination">
+<div class="flickr_pagination text-center text-blue-400 font-bold mb-4">
 	<%= will_paginate @articles, :container => false %>
 </div>
 <%= render 'article' %>
 
-<div class="flickr_pagination">
+<div class="flickr_pagination text-center text-blue-400 font-bold">
 	<%= will_paginate @articles, :container => false %>
 </div>

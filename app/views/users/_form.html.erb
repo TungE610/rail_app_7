@@ -1,6 +1,6 @@
 
 
-<div class="container pt-10 pb-10 m-auto w-1/2 border-4 border-indigo-200 border-y-indigo-500">
+<div class="container pt-10 pb-10 m-auto w-1/2	bg-slate-100">
 	<div class="row">
 		<%= render 'shared/errors', obj: @user %>
 		<%= form_with(model: @user, class: "w-full max-w-sm m-auto", local: true, data: { turbo: false }) do |f| %>
@@ -47,8 +47,8 @@
 					<%= f.submit(@user.new_record? ? "Sign Up" : "Update Account",class: "shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" )%>
 				</div>
 			</div>
-			<div class="return-link">
-				<%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info" %>
+			<div class="return-link text-center">
+				<%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-info text-blue-400" %>
 			</div>
 		<% end %>
 	</div>

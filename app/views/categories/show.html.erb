@@ -7,7 +7,7 @@
 <% end %>
 
 <% if @articles.count > 0 %>
-<h3 class="text-center mt-4 text-blue-600 font-bold text-2xl mb-6"><%= @user.username%>'s Articles</h3>
+<h3 class="text-center mt-4 text-blue-600 font-bold text-2xl mb-6"><%= @category.name%>'s Articles</h3>
 <%= render 'articles/article' %>
 <% else %>
 <h3 class="text-center mt-4">No Articles</h3>
